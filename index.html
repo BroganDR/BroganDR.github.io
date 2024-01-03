@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Brogan Reed Portfolio</title>
+</head>
+<nav id="nav-bar">
+  
+   
+     
+      <h1 id="title">
+      Brogan Reed Software Developer Extraordinaire
+      </h1>
+      <ul>
+        <li><a href="#" onclick="openModal()">Contact Me</a>
+          </li>
+        <li>Project Portfolio</li>
+      </ul>
+    </nav>
+
+    <div id="myModal" class="modal">
+      <span onclick="closeModal()" style="cursor: pointer; float: right;">&times;</span>
+      <h2><a href="https://github.com/BroganDR">Github</a> </h2>
+      <h2><a href="https://www.linkedin.com/in/brogan-reed/">Linkedin</a></h2>
+      
+  </div>
+
+  <script>
+   
+    function openModal() {
+        document.getElementById('myModal').style.display = 'block';
+        document.getElementById('overlay').style.display = 'block';
+    }
+
+    function closeModal() {
+        document.getElementById('myModal').style.display = 'none';
+        document.getElementById('overlay').style.display = 'none';
+    }
+</script>
+  <body>
+   
+<div class="upper-page">
+    <article class="About-Me">
+      
+      <img id="me" src="me.jpg" alt="It Is I. A Photo of Me" />
+      <h3 id="aboutMeHeader">About Me:</h3>
+      <p>
+        My name is Brogan Reed and I am a full stack software developer. Ive
+        always had a passion for coding am looking forward to continuing my
+        career java development. I recently finished a course at WCCI and am
+        looking for work opportunities.
+      </p>
+    </article>
+
+    <article id="skills">
+      <h3>Skills:</h3>
+      <ul>
+        <li>Comprehensive Java Knowledge</li>
+        <li>Front End Development</li>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <li>Object Oriented Programming</li>
+        <li>APIs</li>
+        <li>Rest</li>
+      </ul>
+    </article>
+  </div>
+
+    <article class="project-section">
+      <h2 id="project-header">My Project Portfolio</h2>
+      <div id="portfolio-box-1">
+        
+        
+          <img src="animal shelter.jpg" alt="Animal Shelter" />
+          
+          <a href="https://github.com/2023-Fall-Java-Cohort/virtual-pet-1-BroganDR"><h2>Virtual pet:</h2></a>
+           
+        
+            
+            <ul>
+              <li>Java</li>
+              <li>Master Level Logic</li>
+            </ul>
+        
+       
+      </div>
+
+      <div id="portfolio-box-2">
+        <img src="garage.jpg" alt="Car Garage" />
+        <a href="https://github.com/2023-Fall-Java-Cohort/car-workshop-template-BroganDR"><h2>Car Garage:</h2></a>
+          
+          
+          <ul>
+            <li>Java</li>
+            <li>Intricate Maneuvering Between Multiple Elements</li>
+          </ul>
+       
+      </div>
+
+      <div id="portfolio-box-3">
+        <img src="blackjack.jpg" alt="BlackJack" />
+          <a href="https://github.com/2023-Fall-Java-Cohort/blackjack-BroganDR"><h2>BlackJack:</h2></a>
+        
+        <ul>
+          <li>The Thrill of Gambling</li>
+          <li>No Risk To Your Pockets</li>
+        </ul>
+      </div>
+    </article>
+  </body>
+  <footer>
+    <p>copyright Brogan Reed</p>
+  </footer>
+</html>
